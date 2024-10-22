@@ -1,7 +1,7 @@
 name: Build WSA
 on:
   push:
-  pull_request;
+  pull_request:
   workflow_dispatch:
     inputs:
       magisk_apk:
@@ -529,4 +529,4 @@ jobs:
         #uses: astertom/nexus-upload-artifact@v1
         with:
           name: ${{ env.artifact_name }}
-          path: "./${{ matrix.arch }}/*"
+          #path: "./${{ matrix.arch }}/*"
